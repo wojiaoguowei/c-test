@@ -42,6 +42,8 @@
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.listBox2 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // button1
@@ -199,16 +201,36 @@
             "列表1",
             "列表2",
             "列表3"});
-            this.listBox1.Location = new System.Drawing.Point(350, 324);
+            this.listBox1.Location = new System.Drawing.Point(343, 284);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(227, 328);
             this.listBox1.TabIndex = 8;
+            // 
+            // listView1
+            // 
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(636, 367);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(308, 347);
+            this.listView1.TabIndex = 9;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            // 
+            // listBox2
+            // 
+            this.listBox2.FormattingEnabled = true;
+            this.listBox2.ItemHeight = 18;
+            this.listBox2.Location = new System.Drawing.Point(709, 97);
+            this.listBox2.Name = "listBox2";
+            this.listBox2.Size = new System.Drawing.Size(120, 94);
+            this.listBox2.TabIndex = 10;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1096, 731);
+            this.Controls.Add(this.listBox2);
+            this.Controls.Add(this.listView1);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label3);
@@ -248,6 +270,8 @@
         private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListBox listBox2;
     }
 }
 
