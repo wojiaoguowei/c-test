@@ -51,10 +51,7 @@ namespace study
 
         private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int index = checkedListBox1.SelectedIndex;
-            string name = checkedListBox1.Items[index].ToString();
-            MessageBox.Show(name);
-            MessageBox.Show(index.ToString());
+
         }
 
         private void Form1_Load_1(object sender, EventArgs e)
@@ -85,11 +82,15 @@ namespace study
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            string name = textBox1.Text;
-            textBox2.Text = name;
+
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
         {
 
         }
