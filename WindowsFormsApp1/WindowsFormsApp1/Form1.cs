@@ -31,7 +31,7 @@ namespace WindowsFormsApp1
             fdlg.RestoreDirectory = true;
             if(fdlg.ShowDialog() == DialogResult.OK)
             {
-                button1.Text = fdlg.FileName;
+                textBox1.Text = fdlg.FileName;
             }
         }
     }
