@@ -41,6 +41,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // button1
@@ -104,7 +105,7 @@
             "读书",
             "旅游",
             "电影"});
-            this.checkedListBox1.Location = new System.Drawing.Point(684, 361);
+            this.checkedListBox1.Location = new System.Drawing.Point(816, 39);
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.Size = new System.Drawing.Size(228, 279);
             this.checkedListBox1.TabIndex = 3;
@@ -182,7 +183,7 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(699, 143);
+            this.linkLabel1.Location = new System.Drawing.Point(702, 65);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(98, 18);
             this.linkLabel1.TabIndex = 7;
@@ -190,11 +191,25 @@
             this.linkLabel1.Text = "linkLabel1";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 18;
+            this.listBox1.Items.AddRange(new object[] {
+            "列表1",
+            "列表2",
+            "列表3"});
+            this.listBox1.Location = new System.Drawing.Point(350, 324);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(227, 328);
+            this.listBox1.TabIndex = 8;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1056, 731);
+            this.ClientSize = new System.Drawing.Size(1096, 731);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -232,6 +247,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
 
