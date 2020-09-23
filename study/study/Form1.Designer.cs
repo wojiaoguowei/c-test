@@ -53,6 +53,9 @@
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -251,6 +254,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
+            this.toolTip1.SetToolTip(this.pictureBox1, "这里是图片");
             // 
             // button2
             // 
@@ -261,6 +265,7 @@
             this.button2.Size = new System.Drawing.Size(138, 57);
             this.button2.TabIndex = 1;
             this.button2.Text = "button2";
+            this.toolTip1.SetToolTip(this.button2, "这里是按钮");
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -275,7 +280,7 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(46, 22);
+            this.radioButton1.Location = new System.Drawing.Point(21, 10);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(141, 22);
             this.radioButton1.TabIndex = 15;
@@ -286,7 +291,7 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(46, 50);
+            this.radioButton2.Location = new System.Drawing.Point(21, 47);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(141, 22);
             this.radioButton2.TabIndex = 16;
@@ -309,14 +314,32 @@
             this.panel1.Controls.Add(this.radioButton2);
             this.panel1.Location = new System.Drawing.Point(609, 399);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 100);
+            this.panel1.Size = new System.Drawing.Size(191, 91);
             this.panel1.TabIndex = 18;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(844, 386);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 28);
+            this.textBox1.TabIndex = 19;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(845, 435);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 28);
+            this.textBox2.TabIndex = 20;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1096, 731);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.richTextBox1);
@@ -377,6 +400,9 @@
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RichTextBox richTextBox2;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
 

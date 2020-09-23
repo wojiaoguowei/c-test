@@ -82,5 +82,16 @@ namespace study
             string url = e.Link.LinkData.ToString();
             Process.Start("firefox.exe", url);
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            string name = textBox1.Text;
+            textBox2.Text = name;
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
