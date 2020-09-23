@@ -55,5 +55,11 @@ namespace study
             MessageBox.Show(name);
             MessageBox.Show(index.ToString());
         }
+
+        private void Form1_Load_1(object sender, EventArgs e)
+        {
+            //combobox默认值
+            comboBox1.SelectedIndex = 0;
+        }
     }
 }
