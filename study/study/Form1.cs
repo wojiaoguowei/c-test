@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace study
 {
@@ -60,6 +61,26 @@ namespace study
         {
             //combobox默认值
             comboBox1.SelectedIndex = 0;
+
+            //给linklabel赋值
+            //超级链接 0开始，4个字符
+            linkLabel1.Links.Add(0, 4, @"http://www.baidu.com");
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            string url = e.Link.LinkData.ToString();
+            Process.Start("firefox.exe", url);
         }
     }
 }
