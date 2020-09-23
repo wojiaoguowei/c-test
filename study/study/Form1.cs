@@ -47,5 +47,13 @@ namespace study
                 MessageBox.Show("读书被取消");
             }
         }
+
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int index = checkedListBox1.SelectedIndex;
+            string name = checkedListBox1.Items[index].ToString();
+            MessageBox.Show(name);
+            MessageBox.Show(index.ToString());
+        }
     }
 }
