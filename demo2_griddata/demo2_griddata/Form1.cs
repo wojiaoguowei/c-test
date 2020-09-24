@@ -41,5 +41,10 @@ namespace demo2_griddata
         {
 
         }
+
+        private void 水平排列ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LayoutMdi(MdiLayout.TileHorizontal);
+        }
     }
 }

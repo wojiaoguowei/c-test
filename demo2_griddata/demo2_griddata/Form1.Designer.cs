@@ -34,6 +34,7 @@
             this.CloseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.QuitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.窗体ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.水平排列ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,7 +48,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.MdiWindowListItem = this.窗体ToolStripMenuItem;
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 32);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 36);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -84,9 +85,18 @@
             // 
             // 窗体ToolStripMenuItem
             // 
+            this.窗体ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.水平排列ToolStripMenuItem});
             this.窗体ToolStripMenuItem.Name = "窗体ToolStripMenuItem";
-            this.窗体ToolStripMenuItem.Size = new System.Drawing.Size(182, 28);
+            this.窗体ToolStripMenuItem.Size = new System.Drawing.Size(62, 32);
             this.窗体ToolStripMenuItem.Text = "窗体";
+            // 
+            // 水平排列ToolStripMenuItem
+            // 
+            this.水平排列ToolStripMenuItem.Name = "水平排列ToolStripMenuItem";
+            this.水平排列ToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.水平排列ToolStripMenuItem.Text = "水平排列";
+            this.水平排列ToolStripMenuItem.Click += new System.EventHandler(this.水平排列ToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -114,6 +124,7 @@
         private System.Windows.Forms.ToolStripMenuItem CloseToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem QuitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 窗体ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 水平排列ToolStripMenuItem;
     }
 }
 
