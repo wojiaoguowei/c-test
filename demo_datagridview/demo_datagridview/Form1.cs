@@ -63,5 +63,36 @@ namespace demo_datagridview
                 dataGridView1.Rows.Remove(row);
             }
         }
+
+        private void dataGridView1_CellValidated(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+
+        private void dataGridView1_CellValidating(object sender, DataGridViewCellValidatingEventArgs e)
+        {
+            if(e.ColumnIndex == 3)
+            {
+                //手机号
+                string str = e.FormattedValue.ToString();
+                if(str.Length != 11)
+                {
+                    MessageBox.Show("必须为11位!", "Error");
+                    e.Cancel = true;
+                    return;
+                }
+
+                foreach(char ch in str)
+                {
+                    if(ch < '0' || ch > '9')
+                    {
+                        MessageBox.Show("必须为数字!", "Error");
+                        e.Cancel = true;
+                        return;
+                    }
+                }
+            }
+        }
     }
 }
