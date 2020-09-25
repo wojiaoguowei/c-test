@@ -25,5 +25,15 @@ namespace demo3
         {
             timer1.Start();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if(fontDialog1.ShowDialog() == DialogResult.OK)
+            {
+                textBox1.Font = fontDialog1.Font;
+                float size = fontDialog1.Font.Size;
+
+            }
+        }
     }
 }
